@@ -1,13 +1,24 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: sans-serif;
+  line-height: 2
+}
 header {
   background-color: dodgerblue;
-  padding: 4rem 20%;
+  padding: 3rem 16%;
   color: white;
 }
+header h1 {
+  font-size: 3em;
+  margin-bottom: 0px
+}
 header h2 {
-  width: 40%;
+  margin-top: 0px;
+  width: 25%;
+  line-height: 1.5;
+  font-weight: lighter;
 }
 nav a {
   text-decoration-line: none;
@@ -20,15 +31,29 @@ nav a:last-child::after {
 }
 header+nav {
   background-color: lightgrey;
-  padding: 1rem 20%;
+  padding: 1rem 16%;
 }
 header+nav a {
   color: black;
+  font-weight: bold;
+}
+main {
+  margin: 4rem 16%;
+  min-width: 30rem;
+}
+main>section h3 {
+  margin-top: 0px;
+}
+main>section:first-of-type h3 {
+  color: blue;
+}
+section {
+  display: table-row;
 }
 aside {
   float: right;
   width: 20%;
-  margin: 0px 2rem 2rem;
+  margin: 0px 0px 2rem 3rem;
 }
 aside section:first-of-type h3 {
   margin-top: 0px;
@@ -37,11 +62,18 @@ aside figure figcaption {
   margin-bottom: 1rem;
 }
 aside section a {
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
-main {
-  margin: 4rem 20%;
-  min-width: 30rem;
+aside section a::after {
+  content: " ";
+  display: block;
+  clear: both;
+  padding-bottom: 1rem;
+}
+aside::after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 /*
 main {
@@ -61,20 +93,35 @@ figure {
   margin: 0px;
 }
 figure img {
-  width: 100%;
+  max-width: 100%;
+}
+figure blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+blockquote+figcaption {
+  position: relative;
+  bottom: 2rem;
+}
+.quote-figure-main {
+  margin: 4rem 0px;
+  color: lightblue;
+  font-size: x-large;
 }
 footer {
   position: relative;
-  top: 6rem;
+  top: 5rem;
   background-color: black;
-  padding: 4rem 20%;
+  padding: 4rem 16%;
   margin: 0px;
   z-index: 1;
   text-align: center;
-  align-content: center;
 }
 footer p {
   color: white;
+  font-size: x-small;
+  margin: 2rem 38%;
 }
 footer a {
   color: white;
