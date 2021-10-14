@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: dodgerblue;
+  padding: 4rem 20%;
+  color: white;
+}
+header h2 {
+  width: 40%;
+}
+nav a {
+  text-decoration-line: none;
+}
+nav a:after {
+  content: "  /  ";
+}
+nav a:last-child::after {
+  content: "";
+}
+header+nav {
+  background-color: lightgrey;
+  padding: 1rem 20%;
+}
+header+nav a {
+  color: black;
+}
+aside {
+  float: right;
+  width: 20%;
+  margin: 0px 2rem 2rem;
+}
+aside section:first-of-type h3 {
+  margin-top: 0px;
+}
+aside figure figcaption {
+  margin-bottom: 1rem;
+}
+aside section a {
+  margin-bottom: 2rem;
+}
+main {
+  margin: 4rem 20%;
+  min-width: 30rem;
+}
+/*
+main {
+  min-height: 35rem;
+  max-width: 60%;
+  position: relative;
+  left: 20%;
+  right: 20%;
+}
+*/
+/*
+main section, main section h3, main section p{
+  max-width: 80%;
+}
+*/
+figure {
+  margin: 0px;
+}
+figure img {
+  width: 100%;
+}
+footer {
+  position: relative;
+  top: 6rem;
+  background-color: black;
+  padding: 4rem 20%;
+  margin: 0px;
+  z-index: 1;
+  text-align: center;
+  align-content: center;
+}
+footer p {
+  color: white;
+}
+footer a {
+  color: white;
+}
