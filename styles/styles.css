@@ -11,7 +11,8 @@ header {
   color: white;
 }
 header h1 {
-  font-size: 3em;
+  line-height: 98px;
+  font-size: 4em;
   margin-bottom: 0px
 }
 header h2 {
@@ -26,7 +27,7 @@ nav a {
   margin-right: 1em;
 }
 nav a:after {
-  content: "\00a0\00a0\00a0/"
+  content: "\00a0\00a0\00a0/";
 }
 nav a:last-of-type::after {
   content: "";
@@ -41,13 +42,14 @@ header+nav a {
 main {
   margin: 4rem 16%;
   min-width: 30rem;
+  font-size: larger;
 }
 main a {
   color: #2c9ab7;
   text-decoration-line: none;
 }
 main section {
-  max-width: 80%;
+  max-width: 80rem;
 }
 main>section h3 {
   margin-top: 0px;
@@ -60,12 +62,12 @@ section {
 }
 aside {
   float: right;
-  width: 20%;
-  margin: 0px 0px 2rem 3rem;
+  width: 25%;
+  margin: 0px 0px 2rem 4rem;
 }
 aside section {
   max-width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   display: block;
 }
 aside section:first-of-type h3 {
@@ -97,20 +99,6 @@ aside::after {
   display: block;
   clear: both;
 }
-/*
-main {
-  min-height: 35rem;
-  max-width: 60%;
-  position: relative;
-  left: 20%;
-  right: 20%;
-}
-*/
-/*
-main section, main section h3, main section p{
-  max-width: 80%;
-}
-*/
 figure {
   margin: 0px;
 }
@@ -128,12 +116,11 @@ blockquote+figcaption {
   font-style: italic;
 }
 .quote-figure-main {
-  margin: 4rem 0px;
+  margin: 4rem 0px 5rem;
   color: #52bad5;
   font-size: x-large;
 }
 footer {
-  top: 5rem;
   background-color: #3a3a3a;
   padding: 4rem 16%;
   margin: 0px;
@@ -141,6 +128,8 @@ footer {
   display: table;
   width: 100%;
   font-size: x-small;
+  position: relative;
+  top: 1rem;
 }
 footer p {
   color: white;
