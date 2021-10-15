@@ -86,9 +86,8 @@ aside section a {
   margin-bottom: 3rem;
   display: block;
 }
-aside section a::after {
+.linky-arrows::after {
   content:  " >>";
-  padding-bottom: 3em;
 }
 aside section p {
   margin-bottom: .5em;
@@ -118,6 +117,18 @@ blockquote+figcaption {
   margin: 2rem 0px 3rem;
   color: #52bad5;
   font-size: x-large;
+}
+td:last-of-type {
+  text-align: right;
+}
+.profile-fig {
+  display: inline-block;
+  width: 23%;
+}
+.profile-fig figcaption {
+  text-align: center;
+  background-color: #2c9ab7;
+  color: white;
 }
 footer {
   background-color: #3a3a3a;
