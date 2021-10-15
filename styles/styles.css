@@ -6,10 +6,7 @@ body {
   line-height: 2;
 }
 header {
-  background-image: url('../images/lesson04-mock2-banner-image.jpg');
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #2c9ab7;
   padding: 3rem 16%;
   color: white;
   width: 100%;
@@ -136,10 +133,6 @@ td:last-of-type {
 }
 footer {
   background-color: #3a3a3a;
-  background-image: url('../images/lesson04-mock4-footer-image.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   padding: 4rem 16%;
   margin: 0px;
   text-align: center;
