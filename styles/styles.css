@@ -17,7 +17,7 @@ header h1 {
 }
 header h2 {
   margin-top: 0px;
-  width: 25%;
+  max-width: 20rem;
   line-height: 1.5;
   font-weight: lighter;
 }
@@ -42,6 +42,7 @@ header+nav a {
 main {
   margin: 4rem 16%;
   min-width: 30rem;
+  max-width: 80rem;
   font-size: larger;
 }
 main a {
@@ -58,17 +59,20 @@ main>section:first-of-type h3 {
   color: #239ab9;
 }
 section {
-  display: table-row;
+  display: block;
 }
 aside {
   float: right;
-  width: 25%;
+  max-width: 27%;
   margin: 0px 0px 2rem 4rem;
 }
 aside section {
   max-width: 100%;
   margin-bottom: 5rem;
   display: block;
+}
+aside section:last-of-type, aside section:last-of-type a:last-of-type {
+  margin-bottom: 2rem;
 }
 aside section:first-of-type h3 {
   margin-top: 0px;
@@ -87,12 +91,6 @@ aside section a::after {
 }
 aside section p {
   margin-bottom: .5em;
-}
-aside section a::after::after {
-  content: " ";
-  display: block;
-  clear: both;
-  padding-bottom: 1rem;
 }
 aside::after {
   content: " ";
