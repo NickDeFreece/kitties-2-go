@@ -4,15 +4,21 @@
 body {
   font-family: sans-serif;
   line-height: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
 }
 header {
   background-image: url('../images/lesson04-mock2-banner-image.jpg');
-  background-position: right;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
-  padding: 3rem 16%;
+  padding: 3rem 5%;
   color: white;
-  width: 100%;
+  width: 80rem;
+  max-width: 100%;
 }
 header h1 {
   line-height: 98px;
@@ -28,26 +34,27 @@ header h2 {
 nav a {
   text-decoration-line: none;
   font-weight: bold;
-  margin-right: 1em;
-}
-nav a:after {
-  content: "\00a0\00a0\00a0/";
-}
-nav a:last-of-type::after {
-  content: "";
+  margin: 0 .5em;
+  padding: 1em 1.5em;
 }
 header+nav {
   background-color: #ebebeb;
-  padding: 1rem 16%;
+  padding: 0 5%;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 80rem;
+  max-width: 100%;
 }
 header+nav a {
   color: black;
 }
 main {
-  margin: 4rem 16%;
-  min-width: 30rem;
-  max-width: 80rem;
+  padding: 1rem 1rem;
   font-size: larger;
+  width: 80rem;
+  max-width: 100%;
 }
 main a {
   color: #2c9ab7;
@@ -140,11 +147,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 4rem 16%;
+  padding: 4rem 5%;
   margin: 0px;
   text-align: center;
   display: table;
-  width: 100%;
+  width: 80rem;
+  max-width: 100%;
   font-size: x-small;
   position: relative;
   top: 1rem;
@@ -160,4 +168,12 @@ footer img {
   min-width: 20%;
   margin-left: auto;
   margin-right: auto;
+}
+.sr-only {
+  position: relative;
+  left: -100000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
